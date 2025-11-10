@@ -18,9 +18,9 @@ def sort_list(items, ascending=True):
 
 
 def remove_duplicates_from_list(items):
-    return list(set(items))
+   return list(set(items))
 
-def to_uppercase(items):
+def to_uppercase2(items):
     return [word.upper() for word in items]
 
 if __name__ == "__main__":
@@ -44,7 +44,7 @@ if __name__ == "__main__":
     else:
         print(f"El fichero {filename} no existe")
         word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff"]
-    print(to_uppercase(sort_list(word_list)))
+    print(to_uppercase2(sort_list(word_list)))
 
     if remove_duplicates:
         word_list = remove_duplicates_from_list(word_list)
